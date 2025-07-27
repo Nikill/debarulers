@@ -1,4 +1,5 @@
-baseURL = 'https://example.com/'
+baseURL = 'https://Nikill.github.io/debarulers/'
+
 languageCode = 'fr'
 title = 'Debarulers'
 theme = 'hugo-music'
@@ -12,32 +13,58 @@ defaultContentLanguageInSubdir = true
   [languages.fr]
     languageName = 'Français'
     weight = 1
+    [languages.fr.menu]
+      [[languages.fr.menu.main]]
+        identifier = 'home'
+        name = 'Accueil'
+        url = '/'
+        weight = 1
+      [[languages.fr.menu.main]]
+        identifier = 'music'
+        name = 'Musique'
+        url = '/musique/'
+        weight = 2
+      [[languages.fr.menu.main]]
+        identifier = 'concerts'
+        name = 'Concerts'
+        url = '/concerts/'
+        weight = 3
+      [[languages.fr.menu.main]]
+        identifier = 'rider'
+        name = 'Technical Rider'
+        url = '/technical-rider/'
+        weight = 4
+      [[languages.fr.menu.main]]
+        identifier = 'contact'
+        name = 'Contact'
+        url = '/contact/'
+        weight = 5
   [languages.en]
     languageName = 'English'
     weight = 2
-[menu]
-  [[menu.main]]
-    identifier = 'home'
-    name = 'Home'
-    url = '/' 
-    weight = 1
-  [[menu.main]]
-    identifier = 'music'
-    name = 'Music'
-    url = '/music/'
-    weight = 2
-  [[menu.main]]
-    identifier = 'concerts'
-    name = 'Concerts'
-    url = '/concerts/'
-    weight = 3
-  [[menu.main]]
-    identifier = 'rider'
-    name = 'Technical Rider'
-    url = '/technical-rider/'
-    weight = 4
-  [[menu.main]]
-    identifier = 'contact'
-    name = 'Contact'
-    url = '/contact/'
-    weight = 5
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = 'home'
+        name = 'Home'
+        url = '/'
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = 'music'
+        name = 'Music'
+        url = '/music/'
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = 'concerts'
+        name = 'Concerts'
+        url = '/concerts/'
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = 'rider'
+        name = 'Technical Rider'
+        url = '/technical-rider/'
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = 'contact'
+        name = 'Contact'
+        url = '/contact/'
+        weight = 5

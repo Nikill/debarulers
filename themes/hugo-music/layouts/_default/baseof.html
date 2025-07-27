@@ -10,12 +10,18 @@
 <header>
   <h1><a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a></h1>
   <nav>
-    <a href="{{ relLangURL "/" }}">Home</a>
-    <a href="{{ relLangURL "/musique/" }}">Musique</a>
-    <a href="{{ relLangURL "/concerts/" }}">Concerts</a>
-    <a href="{{ relLangURL "/technical-rider/" }}">Technical Rider</a>
-    <a href="{{ relLangURL "/contact/" }}">Contact</a>
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+    {{ end }}
   </nav>
+  <div class="lang-switch">
+    {{ range .Site.Languages }}
+      {{ if ne .Lang $.Site.Language.Lang }}
+        <a href="/{{ .Lang }}/">{{ .LanguageName }}</a>
+      {{ end }}
+    {{ end }}
+  </div>
+
 </header>
 <main>
   {{ block "main" . }}{{ end }}
