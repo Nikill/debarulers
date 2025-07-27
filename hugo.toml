@@ -1,0 +1,43 @@
+baseURL = 'https://example.com/'
+languageCode = 'fr'
+title = 'Debarulers'
+theme = 'hugo-music'
+defaultContentLanguage = 'fr'
+defaultContentLanguageInSubdir = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+[languages]
+  [languages.fr]
+    languageName = 'Français'
+    weight = 1
+  [languages.en]
+    languageName = 'English'
+    weight = 2
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/' 
+    weight = 1
+  [[menu.main]]
+    identifier = 'music'
+    name = 'Music'
+    url = '/music/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'concerts'
+    name = 'Concerts'
+    url = '/concerts/'
+    weight = 3
+  [[menu.main]]
+    identifier = 'rider'
+    name = 'Technical Rider'
+    url = '/technical-rider/'
+    weight = 4
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+    weight = 5
