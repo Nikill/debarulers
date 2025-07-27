@@ -1,0 +1,8 @@
+- date: 2025-03-15
+  venue: "Le Rock Club"
+  city: "Lyon"
+  tickets: "https://example.com/billet1"
+- date: 2025-04-20
+  venue: "Festival Rock"
+  city: "Paris"
+  tickets: "https://example.com/billet2"
