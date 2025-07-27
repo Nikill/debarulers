@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+  <h1><a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a></h1>
+  <nav>
+    <a href="{{ relLangURL "/" }}">Home</a>
+    <a href="{{ relLangURL "/musique/" }}">Musique</a>
+    <a href="{{ relLangURL "/concerts/" }}">Concerts</a>
+    <a href="{{ relLangURL "/technical-rider/" }}">Technical Rider</a>
+    <a href="{{ relLangURL "/contact/" }}">Contact</a>
+  </nav>
+</header>
+<main>
+  {{ block "main" . }}{{ end }}
+</main>
+<footer>
+  <p>&copy; {{ now.Format "2006" }} Debarulers</p>
+</footer>
+</body>
+</html>
