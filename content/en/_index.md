@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-![Debarulers](/img/debarulers.jpg)
+![Debarulers](/debarulers/img/debarulers.jpg)
 
 Alternative rock from Lyon since 2018. Influences: Foo Fighters, Queens of the Stone Age, Baroness, Mastodon.
 
