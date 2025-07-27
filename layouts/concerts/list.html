@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+<table>
+<tr><th>Date</th><th>Lieu</th><th>Ville</th><th>Billetterie</th></tr>
+{{ range site.Data.concerts }}
+<tr>
+  <td>{{ .date }}</td>
+  <td>{{ .venue }}</td>
+  <td>{{ .city }}</td>
+  <td><a href="{{ .tickets }}">Lien</a></td>
+</tr>
+{{ end }}
+</table>
+{{ end }}
