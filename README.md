@@ -6,6 +6,7 @@ GitHub Pages using a workflow in `.github/workflows/gh-pages.yml`.
 
 The production URL is `https://nikill.github.io/debarulers/`.
 
+
 ## Requirements
 - Hugo 0.123+
 

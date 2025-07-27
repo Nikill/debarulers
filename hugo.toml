@@ -1,4 +1,5 @@
 baseURL = 'https://Nikill.github.io/debarulers/'
+
 languageCode = 'fr'
 title = 'Debarulers'
 theme = 'hugo-music'
