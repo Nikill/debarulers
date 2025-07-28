@@ -4,7 +4,7 @@ languageCode = 'fr'
 title = 'Debarulers'
 theme = 'hugo-music'
 defaultContentLanguage = 'fr'
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -17,27 +17,27 @@ defaultContentLanguageInSubdir = true
       [[languages.fr.menu.main]]
         identifier = 'home'
         name = 'Accueil'
-        url = '/'
+        url = ''
         weight = 1
       [[languages.fr.menu.main]]
         identifier = 'music'
         name = 'Musique'
-        url = '/musique/'
+        url = 'musique/'
         weight = 2
       [[languages.fr.menu.main]]
         identifier = 'concerts'
         name = 'Concerts'
-        url = '/concerts/'
+        url = 'concerts/'
         weight = 3
       [[languages.fr.menu.main]]
         identifier = 'rider'
         name = 'Technical Rider'
-        url = '/technical-rider/'
+        url = 'technical-rider/'
         weight = 4
       [[languages.fr.menu.main]]
         identifier = 'contact'
         name = 'Contact'
-        url = '/contact/'
+        url = 'contact/'
         weight = 5
   [languages.en]
     languageName = 'English'
@@ -46,25 +46,25 @@ defaultContentLanguageInSubdir = true
       [[languages.en.menu.main]]
         identifier = 'home'
         name = 'Home'
-        url = '/'
+        url = ''
         weight = 1
       [[languages.en.menu.main]]
         identifier = 'music'
         name = 'Music'
-        url = '/music/'
+        url = 'music/'
         weight = 2
       [[languages.en.menu.main]]
         identifier = 'concerts'
         name = 'Concerts'
-        url = '/concerts/'
+        url = 'concerts/'
         weight = 3
       [[languages.en.menu.main]]
         identifier = 'rider'
         name = 'Technical Rider'
-        url = '/technical-rider/'
+        url = 'technical-rider/'
         weight = 4
       [[languages.en.menu.main]]
         identifier = 'contact'
         name = 'Contact'
-        url = '/contact/'
+        url = 'contact/'
         weight = 5

@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ .Content }}
+  <ul>
+  {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+  {{ end }}
+  </ul>
+{{ end }}
