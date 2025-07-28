@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-  <h1><a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a></h1>
+  <h1><a href="{{ "" | relLangURL }}">{{ .Site.Title }}</a></h1>
   <nav>
     {{ range .Site.Menus.main }}
       <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
@@ -17,7 +17,7 @@
   <div class="lang-switch">
     {{ range .Site.Languages }}
       {{ if ne .Lang $.Site.Language.Lang }}
-        <a href="/{{ .Lang }}/">{{ .LanguageName }}</a>
+        <a href="{{ if eq .Lang $.Site.Params.defaultLang }}{{ "/" | relURL }}{{ else }}{{ printf "/%s/" .Lang | relURL }}{{ end }}">{{ .LanguageName }}</a>
       {{ end }}
     {{ end }}
   </div>

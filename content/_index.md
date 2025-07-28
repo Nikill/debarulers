@@ -2,7 +2,7 @@
 title: "Accueil"
 ---
 
-![Debarulers](/debarulers/img/debarulers.jpg)
+{{< img src="img/debarulers.jpg" alt="Debarulers" >}}
 
 Rock alternatif lyonnais depuis 2018. Influences : Foo Fighters, Queens of the Stone Age, Baroness, Mastodon.
 
