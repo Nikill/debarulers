@@ -7,6 +7,7 @@ defaultContentLanguage = 'fr'
 defaultContentLanguageInSubdir = false
 [params]
   defaultLang = 'fr'
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
