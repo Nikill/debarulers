@@ -4,7 +4,7 @@ languageCode = 'fr'
 title = 'Debarulers'
 theme = 'hugo-music'
 defaultContentLanguage = 'fr'
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
