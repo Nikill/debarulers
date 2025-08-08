@@ -2,16 +2,20 @@ baseURL = 'https://Nikill.github.io/debarulers/'
 
 languageCode = 'fr'
 title = 'Debarulers'
-theme = 'hugo-music'
 defaultContentLanguage = 'fr'
 defaultContentLanguageInSubdir = false
 [params]
   defaultLang = 'fr'
 
 [markup]
+  [markup.highlight]
+    noclasses = false
+    style = 'github'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+[[module.imports]]
+  path = 'github.com/willfaught/paige'
 [languages]
   [languages.fr]
     languageName = 'Français'
